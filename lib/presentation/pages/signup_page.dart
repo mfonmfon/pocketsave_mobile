@@ -18,11 +18,16 @@ class _SignupPageState extends State<SignupPage> {
         children: [
           Text('Sign Up.',
            style: TextStyle(
-            fontSize: 54,
+            fontSize: 34,
             fontWeight: FontWeight.bold,
             ),
             ),
+            const SizedBox(height: 20),
+            AuthFields(hintText: 'Name',),
+            const SizedBox(height: 20),
             AuthFields(hintText: 'Email',),
+            const SizedBox(height: 20),
+            AuthFields(hintText: 'Password',),
         ],
       ),
     );
